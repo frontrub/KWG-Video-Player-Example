@@ -1,0 +1,18 @@
+<h1>KWG Video Player example</h1>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/webgadgets/KwgVideoPlayer@master/kwg-video-player.css" />
+<script src="https://cdn.jsdelivr.net/gh/webgadgets/KwgVideoPlayer@master/kwg-video-player.js"></script>
+
+<video id="SampleVideo" width="700" height="525" poster="https://bit.ly/bbsampleposter">
+    <source src="https://bit.ly/bbsamplevideo" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+
+<script>
+try {
+      new kwgVideo('#SampleVideo');
+}
+  catch(e) {
+return e;
+    
+  }
+</script>
